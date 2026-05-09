@@ -1,52 +1,83 @@
-🛒 Brazilian E-Commerce Customer Behaviour Analysis
-Show Image
-Show Image
-Show Image
-Show Image
-Show Image
+# 🛒 Brazilian E-Commerce Customer Behaviour Analysis
 
-An end-to-end data analysis project on 100,000+ real e-commerce orders from Olist (Brazil's largest online marketplace), uncovering customer behaviour, revenue trends, delivery performance, and actionable business recommendations.
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![PowerBI](https://img.shields.io/badge/PowerBI-Dashboard-F2C811?logo=powerbi)
+![SQL](https://img.shields.io/badge/SQL-Data%20Querying-orange)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
+> **An end-to-end data analysis project on 100,000+ real e-commerce orders from Olist (Brazil's largest online marketplace), uncovering customer behaviour, revenue trends, delivery performance, and actionable business recommendations.**
 
-📌 Business Problem
+---
+
+## 📌 Business Problem
+
 Olist is Brazil's largest e-commerce platform connecting small businesses to customers. The business team needs answers to:
 
-Which product categories drive the most revenue?
-What is the average customer satisfaction score — and what affects it?
-How long does delivery take — and which categories are slowest?
-Which days and months have the highest order volumes?
-What payment methods do customers prefer?
+- Which product categories drive the most revenue?
+- What is the average customer satisfaction score — and what affects it?
+- How long does delivery take — and which categories are slowest?
+- Which days and months have the highest order volumes?
+- What payment methods do customers prefer?
 
 This project answers all these questions using Python EDA and an interactive Power BI dashboard.
 
-🎯 Key Business Insights
-#InsightBusiness Recommendation1Health & Beauty is the #1 revenue categoryIncrease inventory & ad spend here273% of customers pay via credit cardIntroduce EMI offers to increase avg order value3Average delivery time is 12.5 daysReducing to under 7 days could boost review scores4Monday has the highest order volumeRun weekend flash sales to boost Saturday/Sunday numbers5Low review scores strongly correlate with delayed deliveryFast shipping = better ratings = more repeat customers6Revenue grew 3x from 2017 to 2018Business is in strong growth phase — invest in scaling
+---
 
-📊 Dashboard Preview
-Executive Summary
-Show Image
-Customer & Delivery Analysis
-Show Image
-Key Insights
-Show Image
+## 🎯 Key Business Insights
 
-📈 Python Analysis Charts
-Monthly Order Trend
-Show Image
-Top 10 Product Categories by Revenue
-Show Image
-Payment Method Distribution
-Show Image
-Customer Review Score Distribution
-Show Image
-Slowest Delivery Categories
-Show Image
-Orders by Day of Week
-Show Image
-Average Order Value by Review Score
-Show Image
+| # | Insight | Business Recommendation |
+|---|---------|------------------------|
+| 1 | **Health & Beauty** is the #1 revenue category | Increase inventory & ad spend here |
+| 2 | **73%** of customers pay via credit card | Introduce EMI offers to increase avg order value |
+| 3 | Average delivery time is **12.5 days** | Reducing to under 7 days could boost review scores |
+| 4 | **Monday** has the highest order volume | Run weekend flash sales to boost Saturday/Sunday numbers |
+| 5 | Low review scores strongly correlate with delayed delivery | Fast shipping = better ratings = more repeat customers |
+| 6 | Revenue grew **3x from 2017 to 2018** | Business is in strong growth phase — invest in scaling |
 
-📁 Project Structure
+---
+
+## 📊 Dashboard Preview
+
+### Executive Summary
+![Dashboard Page 1](images/dashboard_page1.png)
+
+### Customer & Delivery Analysis
+![Dashboard Page 2](images/dashboard_page2.png)
+
+### Key Insights
+![Dashboard Page 3](images/dashboard_page3.png)
+
+---
+
+## 📈 Python Analysis Charts
+
+### Monthly Order Trend
+![Monthly Orders](images/1_monthly_orders.png)
+
+### Top 10 Product Categories by Revenue
+![Top Categories](images/2_top_categories.png)
+
+### Payment Method Distribution
+![Payment Methods](images/3_payment_methods.png)
+
+### Customer Review Score Distribution
+![Review Scores](images/4_review_scores.png)
+
+### Slowest Delivery Categories
+![Delivery Time](images/5_delivery_time.png)
+
+### Orders by Day of Week
+![Orders by Day](images/6_orders_by_day.png)
+
+### Average Order Value by Review Score
+![Revenue vs Review](images/7_revenue_vs_review.png)
+
+---
+
+## 📁 Project Structure
+
+```
 Ecommerce-Analysis/
 │
 ├── data/
@@ -79,8 +110,13 @@ Ecommerce-Analysis/
 │   └── Ecommerce_Dashboard.pbix                ← Power BI dashboard
 │
 └── README.md
+```
 
-🔍 Project Workflow
+---
+
+## 🔍 Project Workflow
+
+```
 Raw Data (8 CSVs)
       ↓
 Data Cleaning & Merging (Pandas)
@@ -92,20 +128,37 @@ Business Insights (7 Charts)
 Interactive Dashboard (Power BI)
       ↓
 Actionable Recommendations
+```
 
-📂 Dataset
+---
 
-Source: Kaggle — Brazilian E-Commerce Public Dataset by Olist
-Period: 2016 – 2018
-Size: 100,000+ orders across 8 relational tables
-Features: Orders, customers, products, payments, reviews, sellers, geolocation
+## 📂 Dataset
 
+- **Source:** [Kaggle — Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+- **Period:** 2016 – 2018
+- **Size:** 100,000+ orders across 8 relational tables
+- **Features:** Orders, customers, products, payments, reviews, sellers, geolocation
 
-🛠️ Tech Stack
-ToolPurposePython 3.xCore programmingPandasData cleaning, merging, groupingNumPyNumerical operationsMatplotlibCharts and visualisationsSeabornEnhanced visualisationsPower BIInteractive dashboardJupyter NotebookAnalysis environment
+---
 
-▶️ How to Run
-bash# 1. Clone the repository
+## 🛠️ Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| Python 3.x | Core programming |
+| Pandas | Data cleaning, merging, grouping |
+| NumPy | Numerical operations |
+| Matplotlib | Charts and visualisations |
+| Seaborn | Enhanced visualisations |
+| Power BI | Interactive dashboard |
+| Jupyter Notebook | Analysis environment |
+
+---
+
+## ▶️ How to Run
+
+```bash
+# 1. Clone the repository
 git clone https://github.com/guptavanshi/Ecommerce-Customer-Analysis.git
 
 # 2. Install dependencies
@@ -118,20 +171,28 @@ jupyter notebook notebook/ecommerce_analysis.ipynb
 
 # 5. Open dashboard
 # Open dashboard/Ecommerce_Dashboard.pbix in Power BI Desktop
+```
 
-🔮 Future Scope
+---
 
- Customer segmentation using RFM Analysis (Recency, Frequency, Monetary)
- Build a churn prediction model using scikit-learn
- Geospatial analysis — which Brazilian states have highest order volumes
- Sentiment analysis on customer review comments using NLP
- Deploy an interactive web app using Streamlit
+## 🔮 Future Scope
 
+- [ ] Customer segmentation using **RFM Analysis** (Recency, Frequency, Monetary)
+- [ ] Build a **churn prediction model** using scikit-learn
+- [ ] **Geospatial analysis** — which Brazilian states have highest order volumes
+- [ ] **Sentiment analysis** on customer review comments using NLP
+- [ ] Deploy an interactive web app using **Streamlit**
 
-👩‍💻 About Me
-Vanshika Gupta — Final year B.Tech student passionate about Data Analytics & Business Intelligence.
+---
+
+## 👩‍💻 About Me
+
+**Vanshika Gupta** — Final year B.Tech student passionate about Data Analytics & Business Intelligence.
+
 Skills: Python · Pandas · SQL · Power BI · Matplotlib · Seaborn · Excel
-📧 Connect with me on LinkedIn | GitHub
 
+📧 Connect with me on [LinkedIn](https://linkedin.com/in/) | [GitHub](https://github.com/guptavanshi)
 
-⭐ If you found this project useful, consider giving it a star!
+---
+
+> ⭐ If you found this project useful, consider giving it a star!
